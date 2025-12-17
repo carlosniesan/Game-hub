@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Game Hub - Mis Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎮 Game Hub 🎮</h1>
+            <p class="subtitle">Colección de Juegos Interactivos</p>
+            <div class="header-controls">
+                <button id="themeBtn" class="icon-btn" title="Cambiar tema">
+                    <span class="icon">🌓</span>
+                </button>
+                <button id="infoBtn" class="icon-btn" title="Información">
+                    <span class="icon">ℹ️</span>
+                </button>
+            </div>
+        </header>
+        
+
+        <div class="games-grid">
+
+            <!-- Slide -->
+            <div class="game-card" data-category="puzzle">
+                <div class="game-icon">🔢</div>
+                <h2 class="game-title">Slide</h2>
+                <p class="game-description">Desliza las fichas para ordenarlas y resolver el puzzle numérico.</p>
+                <div class="game-tags">
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Clásico</span>
+                </div>
+                <a href="../Slide/index.html" class="btn btn-play" target="_blank">
+                    <span>Jugar</span>
+                    <span class="icon">▶️</span>
+                </a>
+            </div>
+            
+            <!-- Eclipse -->
+            <div class="game-card" data-category="puzzle">
+                <div class="game-icon">🌞🌙</div>
+                <h2 class="game-title">Eclipse</h2>
+                <p class="game-description">Rellena el tablero con soles y lunas cumpliendo las reglas.</p>
+                <div class="game-tags">
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Lógica</span>
+                </div>
+                <a href="../Eclipse/index.html" class="btn btn-play" target="_blank">
+                    <span>Jugar</span>
+                    <span class="icon">▶️</span>
+                </a>
+            </div>
+
+            <!-- Queens -->
+            <div class="game-card" data-category="puzzle">
+                <div class="game-icon">👑</div>
+                <h2 class="game-title">Queens</h2>
+                <p class="game-description">Coloca reinas en el tablero sin que entren en conflicto entre sí.</p>
+                <div class="game-tags">
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Ajedrez</span>
+                </div>
+                <a href="../Queens/index.html" class="btn btn-play" target="_blank">
+                    <span>Jugar</span>
+                    <span class="icon">▶️</span>
+                </a>
+            </div>
+
+            <!-- Daily Puzzle -->
+            <div class="game-card" data-category="puzzle">
+                <div class="game-icon">📅🧩</div>
+                <h2 class="game-title">Daily Puzzle</h2>
+                <p class="game-description">Un nuevo rompecabezas cada día para mantener tu mente activa.</p>
+                <div class="game-tags">
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Diario</span>
+                </div>
+                <a href="../Daily-Puzzle/index.html" class="btn btn-play" target="_blank">
+                    <span>Jugar</span>
+                    <span class="icon">▶️</span>
+                </a>
+            </div>
+
+            <!-- 1000 en 1 minuto -->
+            <div class="game-card" data-category="speed">
+                <div class="game-icon">⏱️💯</div>
+                <h2 class="game-title">1000 en 1 Minuto</h2>
+                <p class="game-description">Desafío de velocidad: alcanza 1000 puntos en 60 segundos.</p>
+                <div class="game-tags">
+                    <span class="tag">Velocidad</span>
+                    <span class="tag">Arcade</span>
+                </div>
+                <a href="../1000-en-1-minuto/index.html" class="btn btn-play" target="_blank">
+                    <span>Jugar</span>
+                    <span class="icon">▶️</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Desarrollado por Carlos Nieto Sanchez</p>
+            <p class="footer-links">
+                <a href="https://github.com/carlosniesan" target="_blank" title="GitHub">
+                    <span class="icon">💻</span> GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Modal de Información -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📖 Acerca del Hub</h2>
+                <button class="close-btn" id="closeInfoBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>🎮 Bienvenido al Game Hub 🎮</h3>
+                <p>Esta es una colección de juegos desarrollados como proyectos personales. Cada juego ofrece una experiencia única y entretenida.</p>
+                
+                <h3>🎯 Categorías</h3>
+                <ul>
+                    <li><strong>Puzzle:</strong> Juegos de lógica y rompecabezas</li>
+                    <li><strong>Velocidad:</strong> Desafíos contrarreloj</li>
+                    <li><strong>Estrategia:</strong> Juegos que requieren planificación</li>
+                </ul>
+
+                <h3>💡 Características</h3>
+                <ul>
+                    <li>✨ Modo claro/oscuro</li>
+                    <li>🎨 Diseño moderno y responsive</li>
+                    <li>🎯 Múltiples géneros de juegos</li>
+                    <li>📱 Compatible con dispositivos móviles</li>
+                </ul>
+
+                <p><strong>Versión:</strong> 1.0.0</p>
+                <p><strong>Última actualización:</strong> Diciembre 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
